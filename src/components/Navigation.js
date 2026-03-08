@@ -10,24 +10,25 @@ export default function Navigation() {
 
     const navItems = [
         { href: "/", label: "Home" },
-        { href: "/about", label: "About" },
-        { href: "/items", label: "Items" },
-        { href: "/contact", label: "Contact" },
+        { href: "/book", label: "Libro" },
+        { href: "/course", label: "Curso" },
+        { href: "/about", label: "Sobre Jerónimo" },
+        { href: "/contact", label: "Contacto" },
     ];
 
     return (
         <>
             {/* Desktop Navigation */}
-            <nav className="hidden md:block z-10">
-                <ul className="flex gap-6 lg:gap-8 items-center">
+            <nav className="hidden md:block lg:self-start lg:mt-8 z-10 text-lg leading-relaxed antialiased">
+                <ul className="flex gap-4 lg:gap-8 items-center">
                     {navItems.map((item) => (
                         <li key={item.href}>
                             <Link
                                 href={item.href}
-                                className={`font-medium transition-colors hover:text-blue-600 ${
+                                className={`font-base transition-colors hover:text-white bg-black/40 leading-relaxed box-decoration-clone rounded-lg ${
                                     pathname === item.href
-                                        ? "text-blue-600"
-                                        : "text-gray-700"
+                                        ? "text-white font-semibold"
+                                        : "text-white"
                                 }`}
                             >
                                 {item.label}
@@ -44,17 +45,17 @@ export default function Navigation() {
                 aria-label="Toggle menu"
             >
                 <span
-                    className={`w-6 h-0.5 bg-gray-700 transition-all duration-300 ${
+                    className={`w-6 h-0.5 bg-gray-100 transition-all duration-300 ${
                         isMenuOpen ? "rotate-45 translate-y-1.5" : ""
                     }`}
                 ></span>
                 <span
-                    className={`w-6 h-0.5 bg-gray-700 transition-all duration-300 ${
+                    className={`w-6 h-0.5 bg-gray-100 transition-all duration-300 ${
                         isMenuOpen ? "opacity-0" : ""
                     }`}
                 ></span>
                 <span
-                    className={`w-6 h-0.5 bg-gray-700 transition-all duration-300 ${
+                    className={`w-6 h-0.5 bg-gray-100 transition-all duration-300 ${
                         isMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
                     }`}
                 ></span>
@@ -62,7 +63,7 @@ export default function Navigation() {
 
             {/* Mobile Navigation */}
             <nav
-                className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-md z-40 transition-transform duration-300 ${
+                className={`md:hidden fixed top-0 left-0 w-full h-screen bg-gray-900 backdrop-blur-md z-40 transition-transform duration-300 ${
                     isMenuOpen ? "translate-x-0" : "translate-x-full"
                 }`}
             >
@@ -72,10 +73,10 @@ export default function Navigation() {
                             <li key={item.href}>
                                 <Link
                                     href={item.href}
-                                    className={`font-medium transition-colors hover:text-blue-600 ${
+                                    className={`font-medium transition-colors hover:text-white ${
                                         pathname === item.href
-                                            ? "text-blue-600"
-                                            : "text-gray-700"
+                                            ? "text-white font-semibold"
+                                            : "text-gray-200"
                                     }`}
                                     onClick={() => setIsMenuOpen(false)}
                                 >

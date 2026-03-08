@@ -1,21 +1,22 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto } from 'next/font/google';
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-inter",
-    display: "swap",
+const roboto = Roboto({
+  weight: ['400', '700'], // Selecciona los pesos que necesites
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto', // Definimos la variable CSS
 });
 
 export const metadata = {
     title: {
-        template: "%s | Next.js + Tailwind CSS Starter",
-        default: "Next.js + Tailwind CSS Starter",
+        template: "%s | Jerónimo Ciapparelli",
+        default: "Jerónimo Ciapparelli",
     },
-    description: "A clean starter template for Next.js with Tailwind CSS",
+    description: "Transforma tu liderazgo y equipo. Soy Jerónimo Ciapparelli, experto en coaching ejecutivo para empresas y reinvención. Descubre mi libro, podcasts, cursos y mas...",
 };
 
 export default function RootLayout({ children }) {
@@ -23,14 +24,12 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <head></head>
             <body
-                className={`${inter.className} antialiased bg-background text-gray-900 min-h-screen flex flex-col`}
+                className={`${roboto.variable} antialiased text-gray-900 min-h-screen flex flex-col`}
             >
                 <Header />
-
-                <main className="flex-1 px-4 sm:px-6 lg:px-8 py-8">
-                    <div className="max-w-6xl mx-auto w-full">{children}</div>
+                <main className={`flex flex-col bg-white px-4 sm:px-6 lg:px-8`}>
+                    <div className="max-w-screen-2xl mx-auto w-full">{children}</div>
                 </main>
-
                 <Footer />
             </body>
         </html>

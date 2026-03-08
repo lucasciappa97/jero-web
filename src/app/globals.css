@@ -1,4 +1,8 @@
-@import "tailwindcss";
+/* src/app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Hide scrollbar for all browsers */
 html,
@@ -11,21 +15,19 @@ body::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
 }
 
-@theme {
-    --color-background: #ffffff;
-    --color-primary: #9d00ff;
-    --color-secondary: ##ff5c00;
-}
-
 @layer components {
     .spinner {
         margin: 3.2rem auto 1.6rem;
         width: 60px;
         aspect-ratio: 1;
         border-radius: 50%;
-        border: 8px solid theme("colors.primary");
-        border-right-color: theme("colors.secondary");
+        border: 8px solid #ff7b00;
+        border-right-color: #fd7200;
         animation: rotate 1s infinite linear;
+    }
+
+    .brands-wrapper {
+        @apply flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-4 mx-8;
     }
 
     @keyframes rotate {
