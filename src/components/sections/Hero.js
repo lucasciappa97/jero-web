@@ -54,7 +54,7 @@ export default function Hero() {
       </div>
       <div
         className={`
-                    absolute md:hidden bottom-0 w-full min-h-[42vh] inset-x-auto
+                    absolute md:hidden bottom-0 w-full min-h-[45vh] inset-x-auto
                     transition-all duration-1000 ease-out z-10
                     ${animationClasses} 
                 `}
@@ -69,9 +69,9 @@ export default function Hero() {
         />
       </div>
       <div className="absolute w-screen h-[75vh] bg-black opacity-40"></div>
-      <div className="max-w-4xl flex flex-col items-start self-start gap-6 z-10 lg:p-2 py-3 mx-auto lg:ml-24">
-        <h1 className="text-5xl sm:text-8xl font-semibold text-left text-white">
-          Redefini el rumbo de tu carrera
+      <div className="max-w-4xl flex flex-col items-start self-start gap-4 lg:gap-8 z-10 lg:p-2 py-3 mx-auto lg:ml-24">
+        <h1 className="text-[2.70rem] sm:text-8xl font-semibold text-left text-white">
+          Redefiní el rumbo de tu carrera
         </h1>
         <h3 className="text-3xl hidden sm:block sm:text-4xl font-semibold text-left text-white">
           Creá tu nueva identidad
