@@ -48,12 +48,11 @@ const BookPresentationSection = () => {
             </h1>
 
             <p className="text-primary-white leading-relaxed max-w-prose text-xl antialiased">
-              Si estabas buscando una ayuda para hacer tu transición de carrera
-              y no sabés para dónde disparar, este libro pasará a ser tu mentor.
-              Jerónimo no escatima y te comparte paso a paso su trayecto, para
-              hacer más fácil el tuyo. Una lectura totalmente inspiradora y
-              estimulante que nos incita a seguir nuestro propio camino hacia el
-              éxito.
+              Si estabas buscando una ayuda para redefinir tu rumbo y no sabés
+              que hacer, este libro pasará a ser tu mentor. Jerónimo no escatima
+              y te comparte paso a paso su trayecto, para hacer más fácil el
+              tuyo. Una lectura totalmente inspiradora y estimulante que nos
+              incita a seguir nuestro propio camino.
             </p>
 
             <ul className="mt-8 space-y-3 text-primary-white leading-relaxed max-w-prose text-lg antialiased">
@@ -142,7 +141,7 @@ const BookPresentationSection = () => {
                 Algunas imágenes de la presentación
               </h2>
               <p className="leading-relaxed max-w-prose text-lg antialiased">
-                Presentación oficial de Creadores en la 50° Feria del Libro. El
+                Presentación oficial de Creadores en la 48° Feria del Libro. El
                 7 de mayo de 2024, lo celebramos rodeados de familia, amigos y
                 una comunidad decidida a rediseñar su camino profesional.
               </p>

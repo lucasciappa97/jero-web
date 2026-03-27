@@ -40,9 +40,7 @@ export default function Section1() {
                 {" "}
                 <span className="w-1.5 h-6 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>
                 <p className="text-gray-800 leading-relaxed max-w-prose text-xl antialiased">
-                  Que no sabés quien sos fuera de la oficina y aquí el texto
-                  puede seguir creciendo a dos o tres renglones pero el detalle
-                  queda arriba.
+                  Que no sabés quien sos fuera de la oficina.
                 </p>
               </div>
               <div className="flex items-start gap-3">

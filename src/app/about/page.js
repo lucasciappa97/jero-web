@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="w-screen relative left-1/2 -translate-x-1/2 bg-background-dark p-4 py-8 lg:pt-56 lg:pb-20">
+    <section className="w-screen relative left-1/2 -translate-x-1/2 bg-background-dark p-4 py-8 pt-56 lg:pb-20">
       <Section1 />
       <Section2 />
       <Section3 />

@@ -16,7 +16,7 @@ const Brands = () => {
             height={48}
             src="/icons/brands/ted.png"
             alt="Transistor"
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 object-right"
             unoptimized // Necesario para imágenes SVG externas
           />
 

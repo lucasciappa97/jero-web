@@ -41,16 +41,17 @@ function VideoCurso() {
   }, []);
 
   return (
-    <section className="pt-28 pb-16 px-4 bg-background-dark w-screen relative left-1/2 -translate-x-1/2">
+    <section className="pt-36 pb-10 px-4 bg-background-dark w-screen relative left-1/2 -translate-x-1/2">
       <div className="max-w-4xl mx-auto">
-        <div className="relative w-full min-h-[150px] flex items-center justify-center pt-10 pb-5">
+        <div className="relative w-full min-h-[150px] flex items-center justify-center pb-5">
           <div className="relative w-full flex flex-col items-center justify-center py-10">
             <div className="text-center z-10">
-              <h2 className="text-3xl md:text-6xl text-gray-100 font-semibold">
-                Inspírate y ganá confianza
+              <h2 className="text-4xl md:text-6xl text-gray-100 font-semibold">
+                Inspirate y ganá confianza
               </h2>
-              <p className="text-gray-100 mt-4 text-xl md:text-2xl">
-                El paso fundamental para liderar tu transición.
+              <p className="text-gray-100 mt-6 text-2xl">
+                El paso fundamental para liderar y definir tu rumbo.
+                
               </p>
             </div>
 

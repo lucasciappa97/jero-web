@@ -2,12 +2,12 @@ import React from 'react';
 
 const GallerySection = () => {
   const photos = [
-    { src: '/images/foto-grupal-06.jpg', alt: 'Conferencia Principal' },
-    { src: '/images/foto-grupal-02.jpeg', alt: 'Networking' },
-    { src: '/images/foto-grupal-03.jpeg', alt: 'Talleres' },
-    { src: '/images/foto-grupal-04.JPG', alt: 'Ponentes destacados' },
-    { src: '/images/foto-grupal-05.jpg', alt: 'Panel de expertos' },
-    { src: '/images/foto-grupal-01.jpeg', alt: 'Cierre del evento' },
+    { src: '/images/conferencias-5.jpeg', alt: 'Conferencia' },
+    { src: '/images/conferencias-1.jpeg', alt: 'Conferencia' },
+    { src: '/images/conferencias-2.jpeg', alt: 'Conferencia' },
+    { src: '/images/conferencias-3.jpeg', alt: 'TEDxUNSAM' },
+    { src: '/images/conferencias-4.jpeg', alt: 'UTN' },
+    { src: '/images/conferencias-0.jpg', alt: 'Cierre del evento' },
   ];
 
   return (
@@ -17,13 +17,13 @@ const GallerySection = () => {
           Conferencias
         </h2>
         <p className="text-gray-200 leading-relaxed max-w-4xl mx-auto text-xl antialiased">
-          Revive los mejores momentos de nuestras conferencias. Un espacio donde la innovación, 
+          Revive los mejores momentos de mis conferencias. Un espacio donde la innovación, 
           el aprendizaje y el networking se unieron para inspirar a la comunidad.
         </p>
       </div>
 
       {/* Grid de Imágenes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {photos.map((photo, index) => (
           <div 
             key={index} 
@@ -32,7 +32,7 @@ const GallerySection = () => {
             <img
               src={photo.src}
               alt={photo.alt}
-              className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
             />
             {/* Overlay sutil al hacer hover */}
             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">

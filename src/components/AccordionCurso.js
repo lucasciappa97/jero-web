@@ -78,6 +78,15 @@ const AccordionCurso = () => {
 
   return (
     <div className="max-w-4xl mx-auto mt-12 px-4 pb-20">
+      <div className="relative pb-12 flex items-center justify-center animate-in fade-in duration-700">
+        <button
+          onClick={() => window.open("https://hotmart.com/es/marketplace/productos/configura-tu-mente-para-superar-obstaculos/M97139132F", "_blank")}
+          className="pointer-events-auto bg-orange-500 hover:bg-orange-600 text-white text-xl md:text-2xl font-bold py-4 px-10 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 uppercase"
+        >
+          ¡Comprar ahora!
+        </button>
+      </div>
+      
       <h3 className="text-2xl md:text-3xl font-bold text-gray-100 mb-8 border-l-4 border-orange-500 pl-4">
         Contenido del Curso
       </h3>
@@ -152,15 +161,6 @@ const AccordionCurso = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="relative pt-20 flex items-center justify-center animate-in fade-in duration-700">
-        <button
-          onClick={() => window.open("https://hotmart.com/es/marketplace/productos/configura-tu-mente-para-superar-obstaculos/M97139132F", "_blank")}
-          className="pointer-events-auto bg-orange-500 hover:bg-orange-600 text-white text-xl md:text-2xl font-bold py-4 px-10 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 uppercase"
-        >
-          ¡Comprar ahora!
-        </button>
       </div>
     </div>
   );

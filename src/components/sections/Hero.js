@@ -45,7 +45,7 @@ export default function Hero() {
                 `}
         >
           <Image
-            src="/images/heroo.png"
+            src="/images/jero-sin-fondo-izq.png"
             alt="Imagen de Jero"
             layout="fill"
             objectFit="contain"
@@ -55,13 +55,13 @@ export default function Hero() {
         </div>
         <div
           className={`
-                    absolute md:hidden bottom-0 w-full min-h-[50vh] inset-x-auto
+                    absolute md:hidden bottom-0 w-full min-h-[40vh] inset-x-auto
                     transition-all duration-1000 ease-out z-10
                     ${animationClasses} 
                 `}
         >
           <Image
-            src="/images/hero-mitad.png"
+            src="/images/jero-sin-fondo-izq.png"
             alt="Imagen de Jero"
             layout="fill"
             objectFit="contain"
@@ -70,10 +70,13 @@ export default function Hero() {
           />
         </div>
         <div className="absolute w-screen h-full bg-black opacity-40"></div>
-        <div className="max-w-4xl flex flex-col items-start space-y-3 lg:space-y-8 mb-52 z-10 p-2 mx-auto lg:ml-48 mt-44 h-1/2">
-          <h1 className="text-6xl sm:text-8xl font-semibold text-left text-white mb-4">
-            Crea tu nueva identidad
+        <div className="max-w-4xl flex flex-col items-start space-y-6 lg:space-y-8 mb-52 z-10 p-2 mx-auto lg:ml-48 mt-44 h-1/2">
+          <h1 className="text-5xl sm:text-8xl font-semibold text-left text-white mb-4">
+            Redefini el rumbo de tu carrera
           </h1>
+          <h3 className="text-3xl sm:text-4xl font-semibold text-left text-white mb-4">
+            Crea tu nueva identidad
+          </h3>
           <p className="text-2xl sm:text-2xl text-left text-white mb-8">
             <span className="bg-black/30 leading-relaxed box-decoration-clone rounded-lg">
               Comienza a diseñar la transición profesional que te permita vivir

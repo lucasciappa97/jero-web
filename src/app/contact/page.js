@@ -104,9 +104,9 @@ export default function Page() {
                     required
                   >
                     <option value="" disabled>Selecciona una opción</option>
-                    <option value="transicion">TRANSICIÓN DE CARRERA</option>
-                    <option value="equipos">EQUIPOS DE ALTA PERFORMANCE</option>
-                    <option value="otro">OTRO</option>
+                    <option value="Transición de carrera">Transición de carrera</option>
+                    <option value="Equipos de alta performance">Equipos de alta performance</option>
+                    <option value="Otro">Otro</option>
                   </select>
                 </div>
 
