@@ -7,12 +7,12 @@ const Section1 = () => {
     <section className="p-6">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-10 sm:gap-24 items-start">
         <div className="space-y-12 text-stone-700 leading-relaxed text-lg sm:w-6/12">
-          <h2 className="text-5xl font-semibold text-gray-200 mb-4">
+          <h2 className="text-5xl lg:text-6xl font-semibold text-gray-200 mb-4">
             Conocé a Jerónimo Ciapparelli
           </h2>
           <h6 className="text-gray-200 leading-relaxed max-w-prose text-2xl antialiased">
             Speaker internacional, consultor de negocios y mentor en
-            transcisiones de carrera.
+            transiciones de carrera.
           </h6>
           <p className="text-gray-200 leading-relaxed max-w-prose text-xl antialiased">
             Durante años trabajé en el mundo corporativo hasta que

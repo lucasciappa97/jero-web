@@ -50,7 +50,7 @@ export default function Page() {
   return (
     <section>
       <div className="w-screen relative left-1/2 -translate-x-1/2 bg-background-dark">
-        <div className="sm:flex sm:justify-center gap-3 px-6 pt-56 pb-10 rounded-xl">
+        <div className="sm:flex sm:justify-center gap-3 p-6 rounded-xl">
           <div className="hidden sm:block sm:w-56 h-28 relative">
             <Image
               src="/icons/flecha-rulo-blanca.svg"
@@ -63,7 +63,7 @@ export default function Page() {
           <div className="flex flex-col items-start gap-4 sm:gap-8 min-h-[300px] text-gray-100">
             <h2 className="text-3xl sm:text-4xl">Contáctame</h2>
             <p className="text-xl font-light">
-              Envía una consulta y me pondré en contacto cuanto antes.
+              Enviá una consulta y te respondo a la brevedad.
             </p>
 
             <div className="py-4 w-full">

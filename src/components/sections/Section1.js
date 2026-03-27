@@ -40,14 +40,14 @@ export default function Section1() {
                 {" "}
                 <span className="w-1.5 h-6 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>
                 <p className="text-gray-800 leading-relaxed max-w-prose text-xl antialiased">
-                  Que no sabés quien sos fuera de la oficina.
+                  Que no sabés quién sos fuera de la oficina.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 {" "}
                 <span className="w-1.5 h-6 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>
                 <p className="text-gray-800 leading-relaxed max-w-prose text-xl antialiased">
-                  Que queres dar el salto pero no tenés las herramientas sin la
+                  Que querés dar el salto pero no tenés las herramientas sin la
                   estructura de una gran empresa.
                 </p>
               </div>
@@ -55,7 +55,7 @@ export default function Section1() {
                 {" "}
                 <span className="w-1.5 h-6 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>
                 <p className="text-gray-800 leading-relaxed max-w-prose text-xl antialiased">
-                  Que el costo de lograr los objetivos coorporativos fué tu
+                  Que el costo de lograr los objetivos corporativos fué tu
                   tiempo, tu energía y muchos momentos importantes con tu
                   familia.
                 </p>

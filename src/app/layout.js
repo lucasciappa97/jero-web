@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <head></head>
             <body
-                className={`${roboto.variable} antialiased text-gray-900 min-h-screen flex flex-col`}
+                className={`${roboto.variable} antialiased text-gray-900 min-h-screen flex flex-col bg-background-dark`}
             >
                 <Header />
-                <main className={`flex flex-col bg-white px-4 sm:px-6 lg:px-8`}>
+                <main className={`flex flex-col bg-white px-4 sm:px-6 lg:px-8 mt-[12rem]`}>
                     <div className="max-w-screen-2xl mx-auto w-full">{children}</div>
                 </main>
                 <Footer />

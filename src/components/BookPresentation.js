@@ -23,8 +23,8 @@ const galleryImages = [
 const BookPresentationSection = () => {
   return (
     <div className="w-screen relative left-1/2 -translate-x-1/2 bg-background-dark p-4">
-      <div className="mx-auto px-4 sm:px-6 max-w-screen-2xl">
-        <div className="min-h-[90vh] flex flex-col-reverse lg:flex-row items-start lg:space-x-12 pt-52 lg:pt-36 pb-20">
+      <div className="mx-auto p-4 sm:p-6 max-w-screen-2xl">
+        <div className="min-h-[90vh] flex flex-col-reverse lg:flex-row items-start lg:space-x-12">
           <div className="lg:w-2/4 self-center mb-10 lg:mb-0">
             <div className="w-80 h-42 sm:w-full relative rounded-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
               <Image
@@ -49,7 +49,7 @@ const BookPresentationSection = () => {
 
             <p className="text-primary-white leading-relaxed max-w-prose text-xl antialiased">
               Si estabas buscando una ayuda para redefinir tu rumbo y no sabés
-              que hacer, este libro pasará a ser tu mentor. Jerónimo no escatima
+              qué hacer, este libro pasará a ser tu mentor. Jerónimo no escatima
               y te comparte paso a paso su trayecto, para hacer más fácil el
               tuyo. Una lectura totalmente inspiradora y estimulante que nos
               incita a seguir nuestro propio camino.
@@ -86,7 +86,7 @@ const BookPresentationSection = () => {
                   ></path>
                 </svg>
                 <span>
-                  Descubrirás que el fracaso no es un hecho inamobible, sino una
+                  Descubrirás que el fracaso no es un hecho inamovible, sino una
                   interpretación capitalizable para tu evolución
                 </span>
               </li>

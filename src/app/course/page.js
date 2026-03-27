@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="w-screen relative left-1/2 -translate-x-1/2 p-4 py-8 lg:py-20 bg-background-dark">
+    <section className="w-screen relative left-1/2 -translate-x-1/2 p-4 bg-background-dark">
       <VideoCurso />
       <AccordionCurso />
     </section>

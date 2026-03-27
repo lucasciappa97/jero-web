@@ -41,7 +41,7 @@ function VideoCurso() {
   }, []);
 
   return (
-    <section className="pt-36 pb-10 px-4 bg-background-dark w-screen relative left-1/2 -translate-x-1/2">
+    <section className="pb-16 p-4 bg-background-dark w-screen relative left-1/2 -translate-x-1/2">
       <div className="max-w-4xl mx-auto">
         <div className="relative w-full min-h-[150px] flex items-center justify-center pb-5">
           <div className="relative w-full flex flex-col items-center justify-center py-10">

@@ -24,8 +24,8 @@ const AccordionCurso = () => {
       clases: [
         "La mentalidad reactiva",
         "Modelo Mental Reactivo",
-        "¿Queres salir de este paradigma?",
-        "Te muestro como funciona",
+        "¿Querés salir de este paradigma?",
+        "Te muestro cómo funciona",
         "Guía Práctica",
       ],
     },
@@ -35,14 +35,14 @@ const AccordionCurso = () => {
         "La mentalidad proactiva",
         "Modelo Mental Proactivo",
         "Automatizando esta mentalidad",
-        "Te muestro como funciona",
+        "Te muestro cómo funciona",
         "Guía Práctica",
       ],
     },
     {
       titulo: "Dinámica de las emociones",
       clases: [
-        "Logica emocional reactiva",
+        "Lógica emocional reactiva",
         "Lógica emocional proactiva",
         "Respuesta emocional",
         "Estrategias de la mentalidad reactiva",

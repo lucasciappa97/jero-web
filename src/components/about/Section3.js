@@ -17,7 +17,7 @@ const GallerySection = () => {
           Conferencias
         </h2>
         <p className="text-gray-200 leading-relaxed max-w-4xl mx-auto text-xl antialiased">
-          Revive los mejores momentos de mis conferencias. Un espacio donde la innovación, 
+          Reviví los mejores momentos de mis conferencias. Un espacio donde la innovación, 
           el aprendizaje y el networking se unieron para inspirar a la comunidad.
         </p>
       </div>
