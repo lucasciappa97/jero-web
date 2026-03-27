@@ -69,8 +69,8 @@ export default function Hero() {
         />
       </div>
       <div className="absolute w-screen h-[75vh] bg-black opacity-40"></div>
-      <div className="max-w-4xl flex flex-col items-start self-start gap-4 lg:gap-8 z-10 lg:p-2 py-3 mx-auto -mt-3 lg:-mt-0 lg:ml-24">
-        <h1 className="text-[2.70rem] sm:text-8xl font-semibold text-left leading-tight lg:leading-normal text-white">
+      <div className="max-w-4xl flex flex-col items-start self-start gap-4 lg:gap-8 z-10 lg:p-2 py-3 mx-auto -mt-3 lg:-mt-0 lg:ml-20">
+        <h1 className="text-[2.70rem] sm:text-8xl font-semibold text-left leading-tight text-white">
           Redefiní el rumbo de tu carrera
         </h1>
         <h3 className="text-3xl hidden sm:block sm:text-4xl font-semibold text-left text-white">
