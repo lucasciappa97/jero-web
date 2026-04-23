@@ -12,7 +12,7 @@ export default function Navigation() {
         { href: "/", label: "Home" },
         { href: "/book", label: "Libro" },
         { href: "/course", label: "Curso" },
-        { href: "/about", label: "Sobre Jerónimo" },
+        { href: "/about", label: "Sobre mí" },
         { href: "/contact", label: "Contacto" },
     ];
 
