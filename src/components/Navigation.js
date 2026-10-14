@@ -4,22 +4,25 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-export default function Navigation() {
+export default function Navigation({ atTop = true }) {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navItems = [
-        { href: "/", label: "Home" },
-        { href: "/book", label: "Libro" },
-        { href: "/course", label: "Curso" },
+        { href: "/", label: "Inicio" },
         { href: "/about", label: "Sobre mí" },
+        { href: "/#personas", label: "Personas" },
+        { href: "/#empresas", label: "Empresas" },
+        { href: "/#academy", label: "Academy" },
         { href: "/contact", label: "Contacto" },
+        // { href: "/book", label: "Libro" },
+        // { href: "/course", label: "Curso" },
     ];
 
     return (
         <>
             {/* Desktop Navigation */}
-            <nav className="hidden md:block lg:self-start lg:mt-8 z-10 text-lg leading-relaxed antialiased">
+            <nav className={`hidden md:block z-10 text-lg leading-relaxed antialiased transition-all duration-300 ${atTop ? "lg:self-start lg:mt-8" : "self-center"}`}>
                 <ul className="flex gap-4 lg:gap-8 items-center">
                     {navItems.map((item) => (
                         <li key={item.href}>

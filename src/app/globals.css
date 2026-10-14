@@ -1,38 +1,72 @@
-/* src/app/globals.css */
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@source "../../components/**/*.{js,ts,jsx,tsx,mdx}";
 
-/* Hide scrollbar for all browsers */
+@theme {
+  /* Colors */
+  --color-primary: #df801b;
+  --color-secondary: #9A01F1;
+  --color-terciary: #FB00C2;
+  --color-fourth: #FF86B3;
+
+  /* Light colors */
+  --color-primary-light: #ff9337;
+  --color-primary-white: #F7F8FC;
+  --color-secondary-light: #89379e;
+  --color-ternary-light: #f6f7f8;
+  --color-gray-light: #F8FAFC;
+
+  /* Dark colors */
+  --color-primary-dark: #101A3C;
+  --color-secondary-dark: #37DBFF87;
+  --color-ternary-dark: #1E3851;
+  --color-background-dark: #111827;
+  --color-gray-dark: #0F172A;
+  --color-gray-primary: #484040;
+
+  /* Animations */
+  --animate-infinite-scroll: infinite-scroll 20s linear infinite;
+
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100%); }
+  }
+}
+
 html,
 body {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
 }
 
-@layer components {
-    .spinner {
-        margin: 3.2rem auto 1.6rem;
-        width: 60px;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        border: 8px solid #ff7b00;
-        border-right-color: #fd7200;
-        animation: rotate 1s infinite linear;
-    }
+.spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #ff7b00;
+    border-right-color: #fd7200;
+    animation: rotate 1s infinite linear;
+}
 
-    .brands-wrapper {
-        @apply flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-4 mx-8;
-    }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    @keyframes rotate {
-        to {
-            transform: rotate(1turn);
-        }
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
     }
 }

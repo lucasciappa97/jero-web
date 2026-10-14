@@ -3,6 +3,7 @@ import { Roboto } from 'next/font/google';
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToHash from "@/components/ScrollToHash";
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -45,9 +46,11 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <head></head>
             <body
+                suppressHydrationWarning
                 className={`${roboto.variable} antialiased text-gray-900 min-h-screen flex flex-col bg-background-dark`}
             >
                 <Header />
+                <ScrollToHash />
                 <main className={`flex flex-col bg-white px-4 sm:px-6 lg:px-8 mt-[12rem]`}>
                     <div className="max-w-screen-2xl mx-auto w-full">{children}</div>
                 </main>

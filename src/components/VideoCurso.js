@@ -1,44 +1,21 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
-import Player from "@vimeo/player";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 
 function VideoCurso() {
   const [showBuyButton, setShowBuyButton] = useState(false);
-  const containerRef = useRef(null); // Usamos Ref en lugar de ID fijo
-  const playerRef = useRef(null);
+  const videoRef = useRef(null);
 
-  useEffect(() => {
-    // Verificamos que el div exista en el DOM
-    if (!containerRef.current) return;
-
-    // Inicializamos el player sobre la referencia actual
-    const player = new Player(containerRef.current, {
-      id: 785021948,
-      responsive: true,
-      autopause: false,
-    });
-
-    playerRef.current = player;
-
-    player.on("timeupdate", (data) => {
-      // Ajuste: 20 segundos (recuerda que data.seconds son segundos)
-      // Si quieres 20 minutos, sería 1200
-      if (data.duration - data.seconds < 20) {
-        setShowBuyButton(true);
-      } else {
-        setShowBuyButton(false);
-      }
-    });
-
-    // LIMPIEZA: Fundamental para que funcione al cambiar de página
-    return () => {
-      if (playerRef.current) {
-        playerRef.current.destroy().catch(() => {});
-        playerRef.current = null;
-      }
-    };
-  }, []);
+  const handleTimeUpdate = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    const remaining = video.duration - video.currentTime;
+    if (remaining < 20) {
+      setShowBuyButton(true);
+    } else {
+      setShowBuyButton(false);
+    }
+  };
 
   return (
     <section className="pb-16 p-4 bg-background-dark w-screen relative left-1/2 -translate-x-1/2">
@@ -46,8 +23,8 @@ function VideoCurso() {
         <div className="relative w-full min-h-[150px] flex items-center justify-center pb-5">
           <div className="relative w-full flex flex-col items-center justify-center py-10">
             <div className="text-center z-10">
-              <h2 className="text-4xl md:text-6xl text-gray-100 font-semibold">
-                Inspirate y ganá confianza
+              <h2 className="text-3xl md:text-5xl text-gray-100 font-semibold">
+                Ganá cada vez mas confianza.
               </h2>
               <p className="text-gray-100 mt-6 text-2xl">
                 El paso fundamental para liderar y definir tu rumbo.
@@ -71,7 +48,15 @@ function VideoCurso() {
         </div>
 
         <div className="relative shadow-2xl rounded-2xl overflow-hidden border border-gray-700 bg-black">
-          <div ref={containerRef} className="aspect-video w-full"></div>
+          <video
+            ref={videoRef}
+            className="aspect-video w-full"
+            controls
+            onTimeUpdate={handleTimeUpdate}
+          >
+            <source src="/videos/curso.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
 
           {showBuyButton && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-50 animate-in fade-in duration-700 pointer-events-none">

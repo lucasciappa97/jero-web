@@ -5,7 +5,7 @@ const Brands = () => {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold text-gray-900">
-          PARTICIPO COMO SPEAKER Y MENTOR EN
+          ORGANIZACIONES QUE CONFIARON EN MI TRABAJO
         </h2>
 
         {/* Contenedor de Logotipos */}

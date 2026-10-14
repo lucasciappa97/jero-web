@@ -71,14 +71,14 @@ className="inline-flex w-full flex-nowrap overflow-hidden bg-white
     sm:[mask-image:linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
     >
       {/* 1. Lista Original */}
-      <ul className="brands-wrapper">
+      <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-4 mx-8">
         {titles.map((titleItem, index) => (
           <TagItem key={`original-${index}`} titleItem={titleItem} />
         ))}
       </ul>
 
       {/* 2. Lista Duplicada (ESENCIAL para el efecto infinito) */}
-      <ul className="brands-wrapper" aria-hidden="true">
+      <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-4 mx-8" aria-hidden="true">
         {titles.map((titleItem, index) => (
           <TagItem key={`clone-${index}`} titleItem={titleItem} />
         ))}

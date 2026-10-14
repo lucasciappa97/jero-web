@@ -70,36 +70,19 @@ export default function Hero() {
       </div>
       <div className="absolute w-screen h-[75vh] bg-black opacity-40"></div>
       <div className="max-w-4xl flex flex-col items-start self-start gap-4 lg:gap-8 z-10 lg:p-2 py-3 mx-auto -mt-3 lg:-mt-0 lg:ml-20">
-        <h1 className="text-[2.70rem] sm:text-[5.25rem] md:w-9/12 xl:w-full font-semibold text-left leading-tight text-white">
-          Redefiní el rumbo de tu carrera
+        <h1 className="text-[2.45rem] sm:text-[4.25rem] md:w-9/12 xl:w-full font-semibold text-left leading-tight text-white">
+          El cambio empieza cuando seguir igual deja de ser una opción
         </h1>
-        <h3 className="text-3xl hidden sm:block sm:text-4xl font-semibold text-left text-white">
-          Creá tu nueva identidad
-        </h3>
-        <p className="text-2xl sm:text-2xl text-left text-white">
+        <h4 className="text-2xl sm:text-2xl text-left text-white">
           <span className="bg-black/30 leading-relaxed box-decoration-clone rounded-lg">
-            Empezá a diseñar la transición profesional que te permita vivir la
-            vida que realmente deseas
+            Transformo la manera en que las personas piensan, deciden y actúan para lograr cambios reales en sus vidas y organizaciones.
           </span>
-        </p>
+        </h4>
         <button
           onClick={scrollToSection} // Ejecutamos la función al hacer clic
-          className="inline-flex items-center justify-center p-3 border-2 bg-transparent border-primary rounded-full shadow-md transition-all duration-300 ease-in-out hover:bg-black border-primary text-primary"
+          className="inline-flex items-center justify-center px-6 py-3 border-2 bg-transparent rounded-full shadow-md transition-all duration-300 ease-in-out hover:bg-black border-primary text-primary"
         >
-          <svg
-            className="w-6 h-6 text-[#df801b]"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 9l-7 7-7-7"
-            ></path>
-          </svg>
+          Descubrí mas
         </button>
       </div>
     </section>

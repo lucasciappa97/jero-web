@@ -1,6 +1,7 @@
 import Section1 from "@/components/about/Section1";
 import Section2 from "@/components/about/Section2";
 import Section3 from "@/components/about/Section3";
+import Section4 from "@/components/about/Section4";
 
 export const metadata = {
   title: 'Sobre mí',
@@ -32,10 +33,11 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="w-screen relative left-1/2 -translate-x-1/2 bg-background-dark p-4 py-6">
+    <div>
       <Section1 />
       <Section2 />
+      <Section4 />
       <Section3 />
-    </section>
+    </div>
   );
 }
