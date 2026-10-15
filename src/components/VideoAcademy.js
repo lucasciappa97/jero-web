@@ -67,7 +67,7 @@ export default function VideoAcademy() {
         <video
           ref={videoRef}
           className="w-full h-64 object-cover"
-          src="/videos/academy.mp4"
+          src={process.env.NEXT_PUBLIC_VIDEO_ACADEMY_URL}
           autoPlay
           loop
           muted
@@ -140,7 +140,7 @@ export default function VideoAcademy() {
             <video
               ref={modalVideoRef}
               className="w-full aspect-video bg-black"
-              src="/videos/academy.mp4"
+              src={process.env.NEXT_PUBLIC_VIDEO_ACADEMY_URL}
               controls
               playsInline
             />

@@ -54,7 +54,7 @@ function VideoCurso() {
             controls
             onTimeUpdate={handleTimeUpdate}
           >
-            <source src="/videos/curso.mp4" type="video/mp4" />
+            <source src={process.env.NEXT_PUBLIC_VIDEO_CURSO_URL} type="video/mp4" />
             Tu navegador no soporta la reproducción de video.
           </video>
 
