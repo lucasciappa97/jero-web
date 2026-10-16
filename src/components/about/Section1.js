@@ -47,7 +47,7 @@ const Section1 = () => {
             </h1>
             <div className="w-12 h-1 bg-primary rounded-full" />
             <p className="text-gray-300 leading-relaxed text-xl antialiased">
-              Speaker internacional, consultor de negocios y mentor en transiciones de carrera.
+              Speaker internacional, consultor de negocios y experto en estrategias de cambio personal y organizacional.
             </p>
           </div>
           <div className="flex flex-col gap-5">

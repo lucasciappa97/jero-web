@@ -2,6 +2,7 @@ import Image from "next/image";
 import Brands from "../Brands";
 import Link from "next/link";
 import VideoAcademy from "../VideoAcademy";
+import VideoCurso from "../VideoCurso";
 
 export default function Section1() {
   return (
@@ -120,6 +121,8 @@ export default function Section1() {
         </div>
       </section>
 
+      <VideoCurso />
+
       {/* Sección: Empresas */}
       <section id="empresas" className="w-screen relative left-1/2 -translate-x-1/2 overflow-hidden mx-auto px-4 py-20 bg-gray-light">
         <div className="max-w-4xl mx-auto flex flex-col items-start gap-6">
@@ -212,7 +215,7 @@ export default function Section1() {
               Una solución para empresas que buscan desarrollar las capacidades de sus equipos de manera continua.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg antialiased">
-              Academy integra rutas de aprendizaje, contenidos digitales, microlearning, evaluaciones y seguimiento del progreso — todo en un mismo lugar, diseñado para que el desarrollo no sea un evento aislado, sino un hábito sostenido.
+              Academy integra rutas de aprendizaje, contenidos digitales, microlearning, evaluaciones y seguimiento del progreso todo en un mismo lugar, diseñado para que el desarrollo no sea un evento aislado, sino un hábito sostenido.
             </p>
             <div className="flex flex-col gap-3 w-full mt-2">
               {[
