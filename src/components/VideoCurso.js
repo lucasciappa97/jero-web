@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 function VideoCurso() {
@@ -60,12 +61,12 @@ function VideoCurso() {
 
           {showBuyButton && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-50 animate-in fade-in duration-700 pointer-events-none">
-              <button
-                onClick={() => window.open("https://hotmart.com/es/marketplace/productos/configura-tu-mente-para-superar-obstaculos/M97139132F", "_blank")}
+              <Link
+                href="/contact"
                 className="pointer-events-auto bg-orange-500 hover:bg-orange-600 text-white text-xl md:text-2xl font-bold py-4 px-10 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 uppercase"
               >
-                ¡Comprar ahora!
-              </button>
+                Contactame
+              </Link>
             </div>
           )}
         </div>

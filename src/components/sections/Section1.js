@@ -208,7 +208,7 @@ export default function Section1() {
               Academy
             </span>
             <h2 className="text-3xl lg:text-4xl font-semibold leading-snug text-white antialiased">
-              El aprendizaje no termina cuando termina una capacitación.
+              Aprendizaje corporativo continuo, potenciado por inteligencia artificial.
             </h2>
             <div className="w-12 h-1 bg-primary rounded-full"></div>
             <p className="text-gray-300 leading-relaxed text-xl antialiased">

@@ -66,9 +66,7 @@ export default function Hero() {
         className={`
           relative z-10 w-full max-w-4xl px-8
           flex flex-col items-start text-left gap-4
-          mb-28 md:mb-0 md:max-w-[52%] md:gap-6 md:px-4 md:py-3 md:mr-20
-          transition-all duration-1000 ease-out
-          ${animationClasses}
+          mb-28 md:mb-0 md:max-w-5xl md:gap-6 md:px-4 md:py-3
         `}
       >
 
@@ -77,14 +75,14 @@ export default function Hero() {
           Jerónimo Ciapparelli
         </span> */}
 
-        <h1 className="text-[2.2rem] md:text-[4.25rem] md:w-9/12 xl:w-full font-semibold leading-[1.15] text-white">
+        <h1 className="text-[2.2rem] md:text-[4.25rem] md:w-9/12 font-semibold leading-[1.15] text-white">
           El cambio empieza cuando seguir igual deja de ser una opción
         </h1>
 
         {/* Línea decorativa */}
         <div className="w-12 h-[2px] bg-primary md:hidden" />
 
-        <p className="text-lg md:text-2xl text-white/75 max-w-[280px] sm:max-w-sm md:max-w-none leading-relaxed">
+        <p className="text-lg md:text-2xl text-white/75 max-w-[280px] sm:max-w-2xl leading-relaxed">
           Transformo la manera en que las personas piensan, deciden y actúan para lograr cambios reales.
         </p>
 
